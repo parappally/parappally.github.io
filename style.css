@@ -1,0 +1,41 @@
+/* this is gonna be my css file */
+
+p{
+  text-align: left;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 20px;
+}
+
+body {
+   background-color: Black;
+   background-image: url("sexyman.png");
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   background-size: 30%;
+}
+
+body a {
+  color: orange;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 70px;
+}
+
+#nav {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+#watcard {
+  text-align: center;
+  color: red;
+  font-size: 10px;
+  font-family: "Helvetica Neue", Helvetica;
+}
