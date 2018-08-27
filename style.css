@@ -25,7 +25,7 @@ p{
 }
 
 body a {
-  color: orange;
+  color: MediumAquamarine;
 }
 
 .background h1 {
@@ -62,5 +62,8 @@ body a {
 
 img {
   width: 85%;
+}
 
+a:hover {
+    color: PaleVioletRed;
 }
