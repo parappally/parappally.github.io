@@ -42,6 +42,6 @@ h5 {
     margin-right: auto;
 }
 
-a:hover {
-    background-color: #D6DCF0;
+a {
+    color: blue;
 }
