@@ -283,6 +283,10 @@ b, strong {
   color: #ffffff;
 }
 
+/* .dark-mode card {
+  class="card text-white bg-secondary mb-3"
+} */
+
 .dark-mode {
   background: #0c0c0d;
 }
