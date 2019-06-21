@@ -7,5 +7,5 @@ Done:
 
 What's next?
   * Adding a particle loading effect
-  * Remaking website in React / Vue
+  * Remaking website in React / Vue (https://bootstrap-vue.js.org/docs/components/card)
   * Incoporating another framework into the site (maybe experiment with Bulma?)
