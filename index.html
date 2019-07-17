@@ -20,6 +20,27 @@
 
     <link rel="stylesheet" href="css/tooplate-style.css">
 
+    <script>
+        
+        function myFunction() {
+            var input, filter, cards, cardContainer, h5, title, i;
+            input = document.getElementById("myFilter");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementById("myItems");
+            console.log("------------", cardContainer);
+            cards = cardContainer.getElementsByClassName("card");
+            for (i = 0; i < cards.length; i++) {
+                title = cards[i].querySelector(".card-body h5.card-title");
+                if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    
+    </script>
+
 </head>
 
 <body>
@@ -120,7 +141,7 @@
 
                     <div class="card-deck">
 
-                        <div class="card">
+                        <div class="card" >
                             <div class="card-body">
                                 <h5 class="card-title">Tools</h5>
                                 </h5>
@@ -159,7 +180,6 @@
             </div>
     </section>
 
-    <!-- PROJECTS -->
     <section class="project py-5" id="project">
         <div class="container">
 
@@ -169,13 +189,13 @@
                     <div class="col-lg-8 mx-auto">
                         <h2>Projects</h2>
                         <p> The ones I'm the most proud of. See more of them <a href="http://www.github.com/parappally" target="_blank">here.</a> </p>
+                        <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for projects..">
                         <br>
                     </div>
-
-                    <div class="card-deck">
+                    
+                    <div class="card-group" >
 
                         <div class="card">
-                            <!-- <img class="card-img-top" src="images/commuze.jpeg" alt="Card image cap"> -->
                             <div class="card-body">
                                 <h5 class="card-title">commuze</h5>
                                 </h5>
@@ -184,12 +204,10 @@
                                 <a target="_blank" href="https://youtu.be/qV4lPmFAsNE" class="card-link">Demo</a>
                                 <a target="_blank" href="https://devpost.com/software/commuze" class="card-link">Devpost</a>
                                 <a target="_blank" href="https://github.com/parappally/commuze" class="card-link">Github</a>
-
                             </div>
                         </div>
 
                         <div class="card">
-                            <!-- <img class="card-img-top" src="images/facematch.jpg" alt="Card image cap"> -->
                             <div class="card-body">
                                 <h5 class="card-title">facematch</h5>
                                 </h5>
@@ -210,12 +228,6 @@
                             </div>
                         </div>
 
-                    </div>
-
-                    <!-- python projects -->
-                    <br>
-                    <div class="card-deck">
-
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">guidin'-george</h5>
@@ -225,7 +237,6 @@
                                 <a target="_blank" href="https://devpost.com/software/guidin-george" class="card-link">Devpost</a>
 
                                 <a target="_blank" href="https://github.com/parappally/Guidin-George" class="card-link">Github</a>
-
                             </div>
                         </div>
 
